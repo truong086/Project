@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="header(name)">
+  <meta charset="UTF-8">
+  <title th:text="${name}"></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery từ Google CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- jQuery từ Microsoft CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .row{
+      width: 100%;
+      height: auto;
+    }
+
+    .row1{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid black;
+
+    }
+    .row2{
+      width: 500px;
+      display: flex;
+    }
+
+    .row3{
+      width: 500px;
+      display: flex;
+    }
+    .row2s{
+      width: 60px;
+      border-right: 1px solid black;
+      text-align: right;
+    }
+
+    .row2ss{
+      margin-left: 10px;
+    }
+
+    .fa{
+      font-size: 25px;
+      padding: 0 10px;
+    }
+    .row4{
+      width: 60px;
+      height: auto;
+      border-right: 1px solid black;
+    }
+    .row5{
+      width: 60px;
+      height: auto;
+    }
+    .row6{
+      width: 60px;
+      height: 60px;
+      border-bottom: 1px solid black;
+      text-align: center;
+      line-height: 60px;
+    }
+    .row4s{
+      width: 100vw;
+      height: auto;
+      display: flex;
+    }
+
+    table{
+      width: 1200px;
+    }
+    .row8{
+      margin-left: 20px;
+      margin-top: 20px;
+
+    }
+    .row9 h1{
+      font-size: 20px;
+    }
+    .row10{
+      width: 1200px;
+      height: auto;
+      border: 1px solid black;
+    }
+    tr, th, td{
+      border: 1px solid black;
+    }
+    .row11 h1{
+      font-size: 20px;
+      line-height: 50px;
+
+    }
+    .row11{
+      width: 100%;
+      height: 50px;
+      border-bottom: 1px solid black;
+    }
+
+    .row12{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+    .row12s{
+      width: 300px;
+      height: auto;
+      border: 2px solid black;
+      margin-left: 10px;
+      border-radius: 10px;
+    }
+    .row12s button{
+      float: left;
+      border: none;
+      outline: none;
+      background: transparent;
+    }
+    .row12s input{
+      width: 230px;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      
+    }
+    i{
+      color: black;
+    }
+    .row11s{
+      border: 1px solid black;
+      width: 500px;
+      height: auto;
+      transform: translateY(-500%);
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      padding: 15px 25px;
+    }
+
+    .row13s{
+      margin: 10px 0;
+    }
+    .row13s button{
+      border: none;
+      outline: none;
+
+    }
+    
+    .row11sss{
+      margin: 20px 0;
+    }
+
+    .row13s button:nth-child(1){
+      background-color: aqua;
+    }
+
+    .active{
+      transform: translateY(-50%);
+      transition: 1s ease-in-out;
+    }
+    #btn{
+      background-color: transparent;
+      border: none;
+      outline: none;
+      border-radius: 10px;
+      width: 80px;
+      height: 50px;
+    }
+    #btn:nth-child(1){
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body id="body">
+  <div class="row">
+    <div class="row1">
+      <div class="row2">
+        <div class="row2s">
+          <a href=""><i class="fa fa-home" aria-hidden="true"></i></a>
+        </div>
+        <div class="row2ss">
+          <a href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="row3">
+        <a href=""><i class="fa fa-bell" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+        <a href="">NAT</a>
+      </div>
+    </div>
+  </div>
+  <div class="row4s">
+    <div class="row4">
+      <div class="row5">
+        <div class="row6">
+          <a href=""><i class="fa fa-home" aria-hidden="true"></i></a>
+        </div>
+        <div class="row6">
+          <a href=""><i class="fa fa-user" aria-hidden="true"></i></a>
+        </div>
+        <div class="row6">
+          <a href=""><i class="fa fa-users" aria-hidden="true"></i></a>
+        </div>
+        <div class="row6">
+          <a href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </div>
+        <div class="row6">
+          <a href=""><i class="fa fa-file-text-o" aria-hidden="true"></i></a>
+        </div>
+        <div class="row6">
+          <a href=""><i class="fa fa-question-circle" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="row7">
+        <div class="row8">
+          <div id="row11s" class="row11s">
+            <div class="row11ss">
+              <h1>Add Group Name</h1>
+              
+            </div>
+            <div class="row11sss">
+              <form th:action="@{/post}" method="post">
+                <div class="row12ss">
+                  <label for="">Group Name</label>
+                  <input type="text" id="groupname" name="groupName" value="A" />
+                </div>
+                <div class="row12ss">
+                  <label style="margin-right: 30px;" for="">Member</label>
+                  <input style="margin: 30px 0;" type="text" id="member" name="member" />
+                </div>
+                <div class="row12ss">
+                  <label style="margin-right: 30px;" for="">Creator</label>
+                  <input type="text" id="creator" name="creator"/>
+                </div>
+                <div class="row12ss">
+                  <input type="hidden" id="createDate" name="createDate" value="2022-10-10"/>
+                </div>
+                <div class="row13s">
+                  <button type="submit" id="btn" onclick="removeClick()">Add</button>
+                  <button type="button" id="btn" onclick="removeClick()">Canl</button>
+                </div>
+              </form>
+            </div>
+          </div>
+            <div class="row9">
+              <h1>Manager Group <i class="fa fa-users" aria-hidden="true"></i></h1>
+            </div>
+            <div class="row10">
+              <div class="row11">
+                <h1>List Group</h1>
+              </div>
+              <div class="row12">
+                <div class="row12s">
+                  <form th:action="@{/search}" method="post">
+                    <input type="search" placeholder="Search" th:value="${search}" id="search" name="search">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </form>
+                </div>
+                <div class="row12ss">
+                  <a id="dis"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                  <a href=""><i class="fa fa-repeat" aria-hidden="true"></i></a>
+                  <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                </div>
+              </div>
+              <div class="row13">
+                <p th:text="|Thông báo: ${message}|"></p>
+                <table>
+                    <thead>
+                      <tr>
+                        <th></th>
+                        <th>STT</th>
+                        <th>Group Name</th>
+                        <th>Member</th>
+                        <th>Creator</th>
+                        <th>Create Date</th>
+                      </tr>
+                    </thead>
+
+                    <tbody id="tbody">
+                      <tr th:each="list, iCount:${findAll}">
+                        <td><input type="checkbox"></td>
+                        <td th:text="${iCount.index+1}"></td>
+                        <td><a th:href="@{/detail/{id}(id=${list.id})}"><p th:text="${list.groupName}"></p></a></td>
+                        <td th:text="${list.member}"></td>
+                        <td th:text="${list.creator}"></td>
+                        <td th:text="${list.createDate}"></td>
+                        <td>
+                          <a th:href="@{/delete/{id}(id=${list.id})}"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jQuery từ Google CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+<script>
+  var dis = document.getElementById("dis")
+  var row11s = document.getElementById("row11s")
+  var body = document.getElementById("body")
+  var groupName = document.getElementById("groupName")
+
+  
+
+  dis.addEventListener('click', () => {
+    row11s.classList.add("active")
+    body.style.background = "gray"
+    row11s.style.background = "white"
+  })
+
+  function removeClick(){
+    body.style.background = ""
+    row11s.classList.remove("active")
+  }
+
+  
+  // $(document).ready(function(){
+  //   $("#deleteData").submit(function(){
+  //     // event.preventDefault()
+  //     var from = $(this).serialize()
+
+  //     $.ajax({
+  //       type: "DELETE",
+  //       url: "/delete",
+  //       data: from,
+  //       success: function(result){
+  //         // access()
+  //         console.log("Thành công" + from)
+  //       },
+  //       error: function(errorMessage){
+  //         console.log(errorMessage)
+  //       }
+  //     })
+  //   })
+  // })
+
+  // function access(){
+  //   $.ajax({
+  //     type: "GET",
+  //     url: "/all",
+  //     success: function(result){
+  //         console.log("Thành công" + from)
+  //       },
+  //       error: function(errorMessage){
+  //         console.log(errorMessage)
+  //       }
+  //   })
+  // }
+
+  // function loadAccess(){
+  //   $.ajax({
+  //     method: "GET",
+  //     url: "/",
+  //     success: page => {
+  //       loadData(page.content)
+  //     },
+  //     error: function(errorMessage){
+  //       console.log(errorMessage)
+  //     }
+  //   })
+  // }
+  // function loadData(access){
+  //   const load = $("#tbody")
+  //   load.empty()
+  //   for(const item of access){
+  //     load.append(`
+  //     <tr>
+  //               <th class='id'>${item.id}</th>
+  //               <td class='full-name'>${item.groupName}</td>
+  //               <td class='username'>${item.member}</td>
+  //               <td class='role'>${item.creator}</td>
+  //               <td class='created-at'>${item.createdAt}</td>
+  //               <td class='department-name'>${item.departmentName}</td>
+  //           </tr>
+  //     `)
+  //   }
+  // }
+  
+</script>
+</div>
+</body>
+</html>
