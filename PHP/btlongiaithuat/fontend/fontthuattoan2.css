@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    background-position: center;
+    background-size: cover;
+}
+.chuabut button{
+    width: 100px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: yellow;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.chuabut button:hover{
+    box-shadow: 2px 2px 5px black;
+}
+.chuabut1 button{
+    width: 100px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: yellow;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.chuabut1 button:hover{
+    box-shadow: 3px 3px 10px black;
+}
+.row6s button{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-family: arial;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 30px;
+    transition: 0.5s ease-in-out;
+}
+.row6s button:hover{
+    transform: scale(0.8);
+    background-color: brown;
+}
+.row1{
+    width: 100%;
+    height: auto;
+    background-color: blue;
+}
+.row2{
+    width: 1500px;
+    height: 80px;
+    margin: 0 auto;
+}
+.row3{
+    width: 500px;
+    height: 80px;
+}
+.row3 h1{
+    font-family: arial;
+    line-height: 80px;
+    color: white;
+}
+.row4{
+    width: 100%;
+    height: 80px;
+    background-color: mediumblue;
+}
+.row5{
+    width: 1500px;
+    height: auto;
+    margin: 0 auto;
+}
+.row6{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    width: 1500px;
+    height: auto;
+}
+.row6 ul{
+    width: 1000px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.row6 ul li{
+    list-style: none !important;
+    display: inline-block !important;
+    height: 80px;
+    line-height: 50px;
+}
+.row6 ul li a{
+    text-decoration: none !important;
+    display: block !important;
+    color: mintcream;
+    font-family: sans-serif !important;
+    font-size: 16px !important;
+    margin: 0 30px !important;
+    font-weight: 600;
+    animation: mauchu 1s ease-in-out infinite !important;
+}
+@keyframes mauchu{
+    0%{
+        color: crimson;
+    }
+    30%{
+        color: yellow;
+    }
+    50%{
+        color: orange;
+    }
+    80%{
+        color: lawngreen;
+    }
+}
+.row6 button{
+    width: 100px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: gold;
+    color: black;
+    font-family: arial;
+    font-weight: 600;
+    margin-right: 80px;
+    cursor: pointer;
+    animation: maunen 1s ease-in-out infinite;
+}
+@keyframes maunen{
+    0%{
+        color: black;
+        background-color: yellow;
+    }
+    50%{
+        color: white;
+        background-color: red;
+    }
+}
+.xemthem1{
+    width: 590px;
+    text-align: left;
+    margin: 10px 50px;
+}
+.xemthem1 button{
+    width: 90px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: brown;
+    color: white;
+    font-family: arial;
+    font-weight: 500;
+    margin-right: 80px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.row7{
+    width: 100%;
+    height: 280px;
+}
+.row8{
+    width: 1200px;
+    height: 220px;
+    margin: 50px auto;
+}
+.row9{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 1200px;
+    height: auto;
+}
+.title h2{
+    font-family: arial;
+    margin: 20px 0;
+}
+.row10s{
+    width: 600px;
+    height: auto;
+    padding: 0 50px;
+}
+.test{
+    width: 100%;
+    height: auto;
+}
+.title2 h5{
+    font-family: arial;
+}
+.gt p{
+    font-family: arial;
+    font-size: 12px;
+}
+.btn button{
+    width: 100px;
+    height: 25px;
+    outline: none;
+    border: none;
+    background-color: brown;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+.row11{
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+}
+.row12{
+    width: 1200px;
+    height: auto;
+    margin: 50px auto;
+    
+}
+.row12 h2{
+    color: brown;
+    font-family: arial;
+    font-size: 18px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.row12 h2::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid grey;
+    top: 30px;
+    opacity: 0.3;
+}
+.row12 h2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    border-bottom: 5px solid brown;
+    margin-top: 7px;
+}
+.row13{
+    display: flex; 
+    justify-content: center;
+    width: 1200px;
+    max-width: 1200px;
+    height: auto;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+.row14{
+    width: 250px;
+    height: auto;
+}
+.row16 a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: arial;
+    color: green;
+    font-weight: 600;
+}
+.row17{
+    width: 100vw;
+    height: auto;
+}
+.row18{
+    width: 1200px;
+    height: auto;
+    margin: 50px auto;
+}
+.row19{
+    max-width: 1200px;
+    width: 1200px;
+    height: auto;
+    display: flex;
+}
+.row20{
+    width: 1000px;
+    height: auto;
+}
+.row21{
+    width: 1000px;
+    height: auto;
+}
+.row22{
+    width: 1000px;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row23{
+    width: 490px;
+    height: 400px;
+}
+.row26 h2{
+    font-family: arial;
+    margin: 10px 10px;
+}
+.row27 p{
+    width: 400px;
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 10px;
+    font-size: 13px;
+}
+.row28{
+    width: 1000px;
+    height: auto;
+}
+.row29{
+    width: 1000px;
+    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.row28s{
+    width: 500px;
+    margin: 10px 0;
+}
+.row29s{
+    display: flex;
+}
+.row31{
+    margin: 0 10px;
+}
+.row32 h1{
+    font-size: 20px;
+    font-family: arial;
+}
+.row33 p{
+    width: 300px;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    margin: 5px 0;
+}
+.row34{
+    width: 200px;
+    height: auto;
+}
+.row36 h2{
+    font-size: 20px;
+    border-bottom: 1px solid grey;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    position: relative;
+}
+.row36 h2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 5px;
+    background-color: brown;
+    bottom: -3px;
+}
+.row37{
+    width: 200px;
+    height: 500px;
+    overflow: scroll;
+}
+.row38 a{
+    text-decoration: none;
+    display: block;
+    padding: 20px 0;
+    font-family: arial;
+    color: darkviolet;
+    font-weight: 600;
+    animation: doimau 0.8s ease-in-out infinite;
+}
+@keyframes doimau{
+    0%{
+        color: darkviolet;
+    }
+    30%{
+        color: red;
+    }
+    50%{
+        color: blue;
+    }
+    80%{
+        color: coral;
+    }
+    100%{
+        color: yellow;
+    }
+}
+.phantrang1{
+    padding-top: 30px;
+    text-align: center;
+}
+.danhsach h2{
+    font-size: 20px;
+    font-family: arial;
+    position: relative;
+    border-bottom: 1px solid grey;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    color: brown;
+}
+.danhsach h2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background-color: brown;
+    bottom: -2.5px;
+}

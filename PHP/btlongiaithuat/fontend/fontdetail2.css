@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid black;
+    animation: mauvien 0.5s ease-in-out infinite;
+}
+@keyframes mauvien{
+    0%{
+        border: 1px solid red;
+    }
+    30%{
+        border: 1px solid yellow;
+    }
+    50%{
+        border: 1px solid orange;
+    }
+}
+.row{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+}
+.rows h2{
+    width: 1200px;
+    height: auto;
+    text-align: center;
+    font-family: arial;
+    color: brown;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    animation: mauchu 2s ease-in-out infinite;
+}
+@keyframes mauchu{
+    0%{
+        color: brown;
+    }
+    30%{
+        color: cyan;
+    }
+    50%{
+        color: darkcyan;
+    }
+    80%{
+        color: darkorchid;
+    }
+}
+.row1{
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row2{
+    width: 500px;
+    height: 600px;
+    animation: doimau 0.5s ease-in-out infinite;
+}
+@keyframes doimau{
+    0%{
+        box-shadow: 1px 1px 20px red;
+    }
+    50%{
+        box-shadow: 2px 1px 3px yellow;
+    }
+    80%{
+        box-shadow: 2px 1px 3px orange;
+    }
+}
+.row3 img{
+    width: 500px;
+}
+.row4 h2{
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+    font-family: arial;
+    color: cornflowerblue;
+    margin: 10px 0;
+}
+.row5{
+    width: 500px;
+    height: 92px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+}
+.row6{
+    width: 500px;
+    margin: 15px 0;
+}
+.row6 button{
+    width: 100px;
+    height: 26px;
+    border: none;
+    outline: none;
+    background-color: yellowgreen;
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.row1s{
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4350px;
+}
+.row2s{
+    width: 500px;
+    height: 600px;
+    animation: doimau 0.5s ease-in-out infinite;
+}
+@keyframes doimau{
+    0%{
+        box-shadow: 1px 1px 20px red;
+    }
+    50%{
+        box-shadow: 2px 1px 3px yellow;
+    }
+    80%{
+        box-shadow: 2px 1px 3px orange;
+    }
+}
+.row3s img{
+    width: 500px;
+}
+.row4s h2{
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+    font-family: arial;
+    color: cornflowerblue;
+    margin: 10px 0;
+}
+.row5s{
+    width: 500px;
+    height: 92px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+}
+.row6s{
+    width: 500px;
+    margin: 15px 0;
+}
+.row6s button{
+    width: 100px;
+    height: 26px;
+    border: none;
+    outline: none;
+    background-color: yellowgreen;
+    color: white;
+    font-size: 13px;
+    margin-left: 10px;
+    cursor: pointer;
+}

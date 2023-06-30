@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 1200px;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-family: arial;
+    font-weight: 500;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+}
+a:hover{
+    background-color: red;
+    color: white;
+    font-weight: 500;
+}
+nav{
+    width: 100vw;
+    height: 80px;
+    background-color: cornflowerblue;
+    justify-content: space-around;
+}

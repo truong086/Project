@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: auto;
+    border: 2px solid black;
+    animation: doimau 0.8s ease-in-out infinite;
+}
+@keyframes doimau{
+    0%{
+        border: 2px solid red;
+    }
+    30%{
+        border: 2px solid aquamarine;
+    }
+    50%{
+        border: 2px solid blue;
+    }
+    80%{
+        border: 2px solid blueviolet;
+    }
+}
+.row{
+    width: 1500px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.row1{
+    margin: 50px 0;
+    width: 800px;
+}
+.row1 img{
+    margin: 30px 0;
+}
+.row1 h1{
+    font-family: arial;
+    color: brown;
+    font-size: 22px;
+    animation: mauchu 1s ease-in-out infinite;
+}
+@keyframes mauchu{
+    0%{
+        color: blueviolet;
+    }
+    30%{
+        color: chocolate;
+    }
+    50%{
+        color: cyan;
+    }
+    80%{
+        color: darkgreen;
+    }
+}
